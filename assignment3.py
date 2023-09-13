@@ -9,6 +9,11 @@ def ProductList(list):
         total = total * list[i]
     return total
 
+def ReverseList(list):
+    rev = list
+    rev.reverse()
+    return rev
+
 def main():
     x = input("Please enter a list of integers seperated by a space ")
     y = x.split(" ")
@@ -17,6 +22,7 @@ def main():
     print(y)
     print("The sum of the list is: " + str(ComputeList(y)))
     print("The product of the list is: " + str(ProductList(y)))
+    print("The reverse of the list is " + str(ReverseList(y)))
 
 if __name__ == "__main__":
     main()
