@@ -10,13 +10,15 @@ def ProductList(list):
     return total
 
 def main():
-    x = input("Please enter a list of integers seperated by a space ")
-    y = x.split(" ")
-    for i in range(len(y)):
-        y[i] = int(y[i])
-    print(y)
-    print("The sum of the list is: " + str(ComputeList(y)))
-    print("The product of the list is: " + str(ProductList(y)))
+    x = input("Please enter a list of integers seperated by a space: ")
+    z = x.split(" ")
+    for i in range(len(z)):
+        z[i] = int(z[i])
+    print(z)
+    print("The sum of the list is: " + str(ComputeList(z)))
+    print("The product of the list is: " + str(ProductList(z)))
+
+    #This change was made in branch part10
 
 if __name__ == "__main__":
     main()
