@@ -22,7 +22,7 @@ def main():
     print(y)
     print("The sum of the list is: " + str(ComputeList(y)))
     print("The product of the list is: " + str(ProductList(y)))
-    
+    print("The reverse of the list is " + str(ReverseList(y)))
 
 if __name__ == "__main__":
     main()
